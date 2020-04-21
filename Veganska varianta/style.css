@@ -37,3 +37,147 @@ body {
 /* ------------------------------- */
 /* ----- DOLE BUDE TVOJE CSS ----- */
 /* ------------------------------- */
+
+.recept-meta{
+    display: flex;
+    justify-content: space-between;
+}
+.doporucujeme{
+    font-size: 14px;
+    font-weight: 400;
+    color:white;
+    text-shadow: 2px 2px 2px rgb(44, 42, 42);
+    /* padding:10px; */
+}
+
+.recept-nazev{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color:white;
+    position: absolute;
+    bottom:20px;
+    text-shadow: 2px 2px 2px rgb(44, 42, 42);
+}
+
+.hlavni-recept .recept-nazev{
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    color:white;
+    position: absolute;
+    bottom:20px;
+    text-shadow: 2px 2px 2px rgb(44, 42, 42);
+}
+
+.hlavni-recept{
+    background-image: url(images/salat.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    min-height:200px;
+    position: relative;
+    border: 1px solid white;
+    padding:10px;
+}
+
+.recept2{
+    background-image: url(images/chlebicek.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    min-height: 90px;
+    position: relative;
+    border: 1px solid white;
+    padding:10px;
+}
+
+.recept3{
+    background-image: url(images/tacos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    min-height: 90px;
+    position: relative;
+    border: 1px solid white;
+    padding:10px;
+}
+
+.recept4{
+    background-image: url(images/cizrna.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    min-height: 90px;
+    position: relative;
+    border: 1px solid white;
+    padding:10px;
+}
+
+.recept5{
+    background-image: url(images/burger.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    min-height: 90px;
+    position: relative;
+    border: 1px solid white;
+    padding:10px;
+}
+
+h2{
+    margin:0;
+}
+
+p{
+    margin:0;
+}
+
+@media (min-width: 480px) {
+    .recept-nazev{
+        font-size: 22px;  
+    } 
+    .recept2,
+    .recept3,
+    .recept4,
+    .recept5{
+        min-height:150px;
+        width:calc(100% /2);
+        float:left;
+        padding: 20px;
+    }
+    .hlavni-recept .recept-nazev{
+        font-size: 36px;    
+    }
+    .hlavni-recept{
+        min-height:250px;
+        width:auto;
+        padding:20px;
+    }
+}
+
+@media (min-width: 860px) {
+    .recept-nazev{
+        font-size: 28px;  
+    } 
+    .recept2,
+    .recept3,
+    .recept4,
+    .recept5{
+        min-height:200px;
+        width: calc(100%/3); 
+        /* width:33%;  původně jsem měla v obou případech 33 % a dělá to ošklivou mezeru, proč?*/
+        float:right;
+        padding: 20px;
+    }
+    .hlavni-recept .recept-nazev{
+        font-size: 48px;    
+    }
+    .hlavni-recept{
+        min-height:400px;
+        width: calc(100%/3);
+        /* width:33%; */
+        padding:20px;
+        float: left;
+    }
+}

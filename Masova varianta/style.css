@@ -38,3 +38,141 @@ body {
 /* ----- DOLE BUDE TVOJE CSS ----- */
 /* ------------------------------- */
 
+.burger,
+.sushi,
+.maso,
+.omacka,
+.grilovani{
+    font-size: 14px;
+    font-weight: 400px;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+}
+.hlavnirecept{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(images/burger.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200px;
+    padding: 10px;
+    position: relative;
+    border:1px solid white;
+    
+}
+
+.recept2{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(images/sushi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90px;
+    padding: 10px;
+    border:1px solid white;
+    position: relative;
+}
+
+.recept3{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(images/kure.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90px;
+    padding: 10px;
+    border:1px solid white;
+    position: relative;
+}
+
+.recept4{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(images/rajcata.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90px;
+    padding: 10px;
+    border:1px solid white;
+    position: relative;
+}
+
+.recept5{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(images/grilovani.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90px;
+    padding: 10px;
+    border:1px solid white;
+    position: relative;
+}
+
+h1{
+    font-weight: 800px;
+    font-size: 28px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgb(75, 71, 71);
+    position: absolute;
+    bottom:20px;
+}
+
+h2{
+    font-weight: 800px;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    margin:0;
+    text-shadow: 1px 1px 2px rgb(75, 71, 71);
+    position: absolute;
+    bottom: 10px;
+}
+
+p{
+    margin:0;
+}
+
+@media (min-width: 480px) {
+    h1{
+        font-size: 36px;     
+    }
+
+    h2{
+        font-size: 22px;
+      
+    }
+
+    .hlavnirecept{
+        min-height: 250px;
+        padding:20px;
+    }
+
+    .recept2,
+    .recept3,
+    .recept4,
+    .recept5{
+        min-height: 150px;
+        padding:20px;
+        width: 50%;
+        float: left;
+    }
+}
+
+@media (min-width: 860px) {
+    h1{
+        font-size: 48px;
+    }
+
+    h2{
+        font-size: 28px;
+    }
+
+    .hlavnirecept{
+        min-height: 400px;
+        width: calc(100%/3);
+        float:left;
+    }
+
+    .recept2,
+    .recept3,
+    .recept4,
+    .recept5{
+        min-height: 200px;
+        width: calc(100%/3);
+        float: left;
+    }
+}
